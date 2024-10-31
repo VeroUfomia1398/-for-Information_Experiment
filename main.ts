@@ -7,8 +7,8 @@ input.onPinPressed(TouchPin.P0, function () {
     }
 })
 input.onButtonPressed(Button.A, function () {
-    pins.servoWritePin(AnalogPin.P1, 180)
-    pins.servoWritePin(AnalogPin.P2, 180)
+    pins.servoWritePin(AnalogPin.P1, 150)
+    pins.servoWritePin(AnalogPin.P2, 10)
 })
 function GoStraight () {
     pins.servoWritePin(AnalogPin.P1, 180)
@@ -21,7 +21,7 @@ input.onButtonPressed(Button.AB, function () {
 })
 input.onButtonPressed(Button.B, function () {
     pins.servoWritePin(AnalogPin.P1, 0)
-    pins.servoWritePin(AnalogPin.P2, 0)
+    pins.servoWritePin(AnalogPin.P2, 170)
 })
 function CornerTurn () {
     pins.servoWritePin(AnalogPin.P1, 180)
