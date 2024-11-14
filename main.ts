@@ -1,14 +1,20 @@
-input.onButtonPressed(Button.A, function () {
-    Straight()
-    Turn()
-})
-function Turn () {
-    pins.servoWritePin(AnalogPin.P1, 155)
-    pins.servoWritePin(AnalogPin.P2, 155)
+function left () {
+    pins.servoWritePin(AnalogPin.P1, 23)
+    pins.servoWritePin(AnalogPin.P2, 23)
     basic.pause(400)
     pins.servoWritePin(AnalogPin.P1, 90)
     pins.servoWritePin(AnalogPin.P2, 90)
 }
+function Turn2 () {
+    pins.servoWritePin(AnalogPin.P1, 157)
+    pins.servoWritePin(AnalogPin.P2, 157)
+    basic.pause(400)
+    pins.servoWritePin(AnalogPin.P1, 90)
+    pins.servoWritePin(AnalogPin.P2, 90)
+}
+input.onButtonPressed(Button.A, function () {
+    Straight()
+})
 input.onButtonPressed(Button.AB, function () {
     pins.servoWritePin(AnalogPin.P1, 90)
     pins.servoWritePin(AnalogPin.P2, 90)
