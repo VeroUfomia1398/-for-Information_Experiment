@@ -1,10 +1,7 @@
 input.onButtonPressed(Button.A, function () {
-    for (let index = 0; index < 4; index++) {
-        Straight()
-        basic.pause(2000)
-        Turn()
-        basic.pause(1000)
-    }
+    Straight()
+    basic.pause(6000)
+    Turn()
 })
 function Turn () {
     pins.servoWritePin(AnalogPin.P1, 180)
@@ -16,7 +13,7 @@ input.onButtonPressed(Button.AB, function () {
 })
 function Straight () {
     pins.servoWritePin(AnalogPin.P1, 0)
-    pins.servoWritePin(AnalogPin.P2, 180)
+    pins.servoWritePin(AnalogPin.P2, 150)
 }
 basic.pause(60000)
 pins.servoWritePin(AnalogPin.P1, 90)
