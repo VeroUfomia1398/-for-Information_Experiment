@@ -3,9 +3,11 @@ input.onButtonPressed(Button.A, function () {
     Turn()
 })
 function Turn () {
-    pins.servoWritePin(AnalogPin.P1, 180)
-    pins.servoWritePin(AnalogPin.P2, 180)
-    basic.pause(500)
+    pins.servoWritePin(AnalogPin.P1, 155)
+    pins.servoWritePin(AnalogPin.P2, 155)
+    basic.pause(400)
+    pins.servoWritePin(AnalogPin.P1, 90)
+    pins.servoWritePin(AnalogPin.P2, 90)
 }
 input.onButtonPressed(Button.AB, function () {
     pins.servoWritePin(AnalogPin.P1, 90)
