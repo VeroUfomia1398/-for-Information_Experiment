@@ -1,6 +1,6 @@
 function Straightshort () {
     pins.servoWritePin(AnalogPin.P1, 0)
-    pins.servoWritePin(AnalogPin.P2, 150)
+    pins.servoWritePin(AnalogPin.P2, 140)
     basic.pause(2000)
 }
 function left () {
@@ -30,9 +30,12 @@ input.onButtonPressed(Button.AB, function () {
 })
 function Straight () {
     pins.servoWritePin(AnalogPin.P1, 0)
-    pins.servoWritePin(AnalogPin.P2, 150)
+    pins.servoWritePin(AnalogPin.P2, 140)
     basic.pause(6000)
 }
 basic.pause(60000)
 pins.servoWritePin(AnalogPin.P1, 90)
 pins.servoWritePin(AnalogPin.P2, 90)
+loops.everyInterval(60000, function () {
+	
+})
