@@ -31,6 +31,3 @@ function Straight () {
 basic.pause(60000)
 pins.servoWritePin(AnalogPin.P1, 90)
 pins.servoWritePin(AnalogPin.P2, 90)
-loops.everyInterval(60000, function () {
-	
-})
